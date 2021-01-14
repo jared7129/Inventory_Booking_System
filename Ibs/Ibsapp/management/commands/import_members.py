@@ -20,13 +20,14 @@ class Command(BaseCommand):
             data.append(_data)
         return data
 
-    def handle_noargs(self, *args, **options):
+    def handle(self, *args, **options):
 
         with open('Members.csv') as f:
             reader = csv.reader(f)
             members = self.__parse_csv(reader)
         count = 0
         for member in members:
-            count+=Member.objects.add(name=member['Name'], surname=member['Surname'], date_joined=['Date Joined'], booking_count=['Booking Count'])
+            inserted, err =Member.objects.update_or_create(name=member['name'], surname=member['surname'], date_joined=member['date_joined'], booking_count=member['booking_count'])
+            inserted.save()
         
-        print('Updated {} members'.format(count))
+        print('Updated members')
