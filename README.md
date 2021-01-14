@@ -77,7 +77,7 @@ The following urls will allow you to access the relevant data view the API
  ```
 
   ```
- http://127.0.0.1:8000/member/ - View a list of bookings
+ http://127.0.0.1:8000/booking/ - View a list of bookings
  ```
 
   ```
