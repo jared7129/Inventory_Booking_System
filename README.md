@@ -4,15 +4,15 @@ This app will allow you to add and update Members, Inventory Items and Bookings.
 
 ### Processes and services:
  1. A booking is done with the member and inventory item attached to the booking.
- 2. Once a booking is created, the booking count for the member will increase by 1, and the inventory for that inventory item will descrease by 1.
- 3. A booking cannot be done if a member has a maximum of 2 bookings to their name, or if an inventory item has 0 in the remaining count
+ 2. Once a booking is created, the booking count for the member will increase by 1, and the inventory for that inventory item will decrease by 1.
+ 3. A booking cannot be done if a member has a maximum of 2 bookings to their name, or if an inventory item has 0 in the remaining count. The validation for this is done in the models.py file.
  4. The app also allows for importing and exporting of data, however if using the system to import, the fields in the csv file will need to match the fields in the model.
  
  To run this in your system:
  
  Clone this repo in your system:
  ```
- git clone https://github.com/rub9542/Inventory_Booking_System.git
+ git clone https://github.com/jared7129/Inventory_Booking_System.git
  ```
  Get inside the repo, type this is terminal:
  ```
