@@ -6,7 +6,7 @@ This app will allow you to add and update Members, Inventory Items and Bookings.
  1. A booking is done with the member and inventory item attached to the booking.
  2. Once a booking is created, the booking count for the member will increase by 1, and the inventory for that inventory item will decrease by 1.
  3. A booking cannot be done if a member has a maximum of 2 bookings to their name, or if an inventory item has 0 in the remaining count. The validation for this is done in the models.py file.
- 4. The app also allows for importing and exporting of data, however if using the system to import, the fields in the csv file will need to match the fields in the model.
+ 4. The app also allows for importing and exporting of data, however if using the system to import, the fields in the csv file will need to match the fields in the model. I have provided a Members.csv file and a Inventory.csv file.
  
  To run this in your system:
  
