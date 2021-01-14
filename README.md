@@ -28,11 +28,11 @@ This app will allow you to add and update Members, Inventory Items and Bookings.
  ```
  Next step is to install all the dependencies into your virtual environment:
  ```
- pip3 install 
-Django==3.0.1
-django-jsonfield==1.4.0
+pip3 install Django==3.0.1
+pip3 install django-jsonfield==1.4.0
+pip3 install django-import-export
  ```
-  You can also run the following if you are missing any dependencies:
+You can also run the following if you are missing any dependencies:
  ```
 pip install requirements.txt
  ```
@@ -66,7 +66,7 @@ The page will reload if you make edits.
 You will also see any lint errors in the console.
 
 ### Accessing the API
-The following urls will allow you to access the relevant data view the API
+The following urls will allow you to access the relevant data via the API:
 
  ```
  http://127.0.0.1:8000/inventory/ - View a list of inventory items
